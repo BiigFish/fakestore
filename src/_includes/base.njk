@@ -42,6 +42,19 @@ banner: /img/yayo-brand.jpg
             {% endfor %}
         {% endif %}
 
+        {% if page.url == "/blog/" %}
+        <div class="store-feed">
+            {% for blogs in collections.blogs %}
+                <div class="store-feed-product">
+                    <a href="{{blogs.url}}">
+                        <img src="{{blogs.data.image}}">
+                        <h4>{{blogs.data.blogtitle}}</h4>
+                    </a>
+                    <h5>{{products.data.price}}</h5>
+                </div>
+            {% endfor %}
+        {% endif %}
+
 
 	{{ content | safe }}
 </body>

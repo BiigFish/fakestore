@@ -21,6 +21,15 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Price", name: "price", widget: "string" }
       - { label: "Description", name: "description", widget: "markdown" }
+  - label: "Blog"
+    name: "blog"
+    folder: "src/blog"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "blogtitle", widget: "string" }
+      - { label: "Text", name: "text", widget: "markdown" }
   - label: "Pages"
     name: "pages"
     editor:
