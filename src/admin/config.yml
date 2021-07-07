@@ -10,14 +10,14 @@ public_folder: "img"
 local_backend: true
 
 collections:
-  -label: "Products"
-   name: "products"
-   folder: "src/products"
-   create: true
-   editor:
+  - label: "Products"
+    name: "products"
+    folder: "src/products"
+    create: true
+    editor:
       preview: false
     fields:
-        - { label: "Title", name: "producttitle", widget: "string" }
-        - { label: "Image", name: "image", widget: "image" }
-        - { label: "Price", name: "price", widget: "string" }
-        - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Title", name: "producttitle", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
