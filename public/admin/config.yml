@@ -21,9 +21,13 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Price", name: "price", widget: "string" }
       - { label: "Description", name: "description", widget: "markdown" }
-  - label: "Home"
-    name: "home"
-    file: "src/index.md"
-    fields:
-      - { label: "Background Image", name: "image", widget: "image"}
-    
+  - label: "Pages"
+    name: "pages"
+    editor:
+      preview: false
+    files:
+      - label: "Home"
+        name: "home"
+        file: "src/index.md"
+        fields:
+          - { label: "Background Image", name: "image", widget: "image"}
