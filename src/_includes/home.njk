@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+
+
+<style>
+	.home-cover {
+  background: url("{{ image }}");
+  min-height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+	{% include "./nav.njk" %}
+	<div class="home-cover"></div>
+
+	{{ content | safe }}
+</body>
+</html>

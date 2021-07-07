@@ -1,0 +1,46 @@
+---
+banner: /img/yayo-brand.jpg
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+
+</head>
+<body>
+	<div class="base-nav">
+	    {% include "./nav.njk" %}
+    </div>
+
+    <div class="banner">
+        <a href="/">
+            <img src="{{ banner }}">
+        </a>
+    </div>
+
+    <div class="info">
+        <h1>{{ title }}</h1>
+        <p>{{ message }}</p>
+    </div>
+
+    {% if page.url == "/store/" %}
+        <div class="store-feed">
+            {% for products in collections.products %}
+                <div class="store-feed-product">
+                    <a href="{{products.url}}">
+                        <img src="{{products.data.image}}">
+                        <h4>{{products.data.producttitle}}</h4>
+                    </a>
+                    <h5>{{products.data.price}}</h5>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+
+	{{ content | safe }}
+</body>
+</html>
