@@ -1,5 +1,4 @@
 ---
-layout: "product"
 producttitle: "Alphabet"
 image: "/img/alphabet.png"
 price: "$12.99"

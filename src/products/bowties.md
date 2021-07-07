@@ -1,5 +1,4 @@
 ---
-layout: "product"
 producttitle: "Bowties"
 image: "/img/bowties.png"
 price: "$19.99"

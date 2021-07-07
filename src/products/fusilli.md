@@ -1,5 +1,4 @@
 ---
-layout: "product"
 producttitle: "Fusilli"
 image: "/img/fusilli.png"
 price: "$9.99"

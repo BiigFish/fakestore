@@ -1,5 +1,4 @@
 ---
-layout: "product"
 producttitle: "Cavatappi"
 image: "/img/cavatappi.png"
 price: "$23.39"
