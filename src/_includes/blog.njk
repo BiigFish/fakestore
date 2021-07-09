@@ -3,6 +3,6 @@ layout: "base.njk"
 ---
 
 <div class="blog-text">
-    <h1 class="blogtitle">{{ blogtitle }}</h1>
-    <p> {{ text }} </p>
+    <h1 class="blogtitle">{{ title }}</h1>
+    {{ content | safe }}
 </div>
